@@ -43,8 +43,8 @@
                             Made with
                             <i class="fa fa-heart"></i>
                             by
-                            <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> <br />
-                            2016. All Rights Reserved
+                            <a target="_blank" href="#">Mohammed Terfa</a> <br />
+                            2022. All Rights Reserved
                         </p>
                     </div>
                 </div>
