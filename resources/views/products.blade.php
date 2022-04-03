@@ -21,22 +21,24 @@
 
       <div class="filters-content">
         <div class="row grid">
+
+            @foreach ($products as $product)
           <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/p1.jpeg" alt="">
+                  <img src="images/{{ $product->image }}" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Cheese Burger
+                    {{ $product->name }}
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    {{ $product->description }}
                   </p>
                   <div class="options">
                     <h6>
-                      $20
+                      $ {{ $product->price }}
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -97,6 +99,7 @@
               </div>
             </div>
           </div>
+          @endforeach
 
         </div>
       </div>
