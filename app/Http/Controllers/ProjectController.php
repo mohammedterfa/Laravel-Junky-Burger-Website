@@ -14,6 +14,6 @@ class ProjectController extends Controller
 
     public function products(){
         $products = DB::table('products')->get();
-        return view('products');
+        return view('products', ['products'=>$products]);
     }
 }
