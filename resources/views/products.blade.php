@@ -22,7 +22,7 @@
       <div class="filters-content">
         <div class="row grid">
 
-            @foreach ($products as $product)
+        @foreach ($products as $product)
           <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
               <div>
