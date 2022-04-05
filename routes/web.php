@@ -22,6 +22,4 @@ Route::get('/about', function () {
 
 Route::get('/products', [ProjectController::class, 'products'])->name('products');
 
-Route::get('/single_product', function () {
-    return view('single_product');
-});
+Route::get('/single_product/{id}',[ProjectController::class,'single_product'])->name('single_product');
