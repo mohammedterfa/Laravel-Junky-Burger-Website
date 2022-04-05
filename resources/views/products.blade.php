@@ -30,9 +30,12 @@
                   <img src="images/{{ $product->image }}" alt="">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    {{ $product->name }}
-                  </h5>
+                    <a href="{{ route('single_product',['id'=>$product->id]) }}">
+                        <h5>
+                            {{ $product->name }}
+                          </h5>
+                    </a>
+
                   <p>
                     {{ $product->description }}
                   </p>
